@@ -16,16 +16,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Subject: $subject\n";
     $email_content .= "Message:\n$message\n";
 
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Please enter correct E-mail id.";
+    if (!isValidEmail($email)) {
+        echo "Please enter a correct email address.";
         exit();
     }
- 
-    if (empty($name) || empty($name1) || empty($email) || empty($message)) {
-        echo "All fields are mandatory.";
+
+    if (empty($name)) {
+        echo "First Name is required.";
+        exit();
+    } elseif (empty($name1)) {
+        echo "Last Name is required.";
+        exit();
+    } elseif (empty($email)) {
+        echo "Email is required.";
+        exit();
+    } elseif (empty($message)) {
+        echo "Message is required.";
         exit();
     }
- 
+
     if (mail($to, $subject, $email_content, $headers)) {
         echo "Your message has been sent successfully!";
     } else {
@@ -39,4 +48,14 @@ function validateText($data)
     $data = htmlspecialchars($data);
     $data = trim($data);
     return $data;
+}
+function isValidEmail($email)
+{
+    $pattern = '/^\S+@\S+\.\S+$/';
+
+    if (preg_match($pattern, $email)) {
+        return true;
+    } else {
+        return false;
+    }
 }
