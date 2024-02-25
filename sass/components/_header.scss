@@ -1,0 +1,191 @@
+@use '../abstracts/index' as a;
+
+header#main-header {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+div#logo {
+    width: 100px;
+}
+
+.navigation-item {
+    font-size: 20px;
+    color: a.$primary-color;
+    font-weight: 600;
+    padding: 14px 0;
+}
+
+.navigation-button {
+    color: a.$primary-color;
+    border: 3px solid a.$primary-color;
+    padding: 14px 0px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+// Styles
+h1 {
+    font-size: 45px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 25px;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  
+  
+  #aboutme {
+    height: 400px;
+    z-index: 3;
+    background: a.$primary-color;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+  }
+  
+  #work {
+    padding: 50px 0px;
+    background: #f1f1f1;
+    margin-top: 0;
+  
+    .workcard {
+      height: auto;
+      margin: 15px;
+      box-shadow: 0px 5px 17px 10px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        box-shadow: 0px 0px 21px 13px rgb(0 0 0 / 23%);
+        zoom: 90%;
+      }
+    }
+  
+    .grid-con {
+      margin-top: 35px;
+    }
+  
+    img.face-image {
+      border-radius: 50%;
+    }
+  
+    img.face-image.client-image {
+      width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .client-name {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+  
+    .client-position {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  
+  footer {
+    background: a.$primary-color;
+    text-align: center;
+    color: white;
+    padding: 35px;
+  
+    h3, h4, p {
+      text-align: center;
+      color: white;
+    }
+  }
+  
+  
+  #testimonialsection {
+    text-align: center;
+  
+    .conversation {
+      color: a.$primary-color;
+      border: 1px solid a.$primary-color;
+      border-radius: 31px;
+      width: 250px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 10px;
+      margin-top: 15px;
+    }
+  }
+  
+  section#reel {
+    padding: 30px 0;
+  
+    .col-span-full {
+      padding: 20px;
+    }
+  }
+  
+  #testimonialsection .text {
+    margin: 20px;
+  }
+  
+  footer .footer-title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  
+  footer h4 {
+    margin-top: 30px;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+  
+  footer h3 {
+    margin-top: 20px;
+  }
+  
+  .footer-copyright {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  
+  
+  section#testimonial {
+    background: #f1f1f1;
+    padding: 50px 0;
+  }
+  #custom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  
+    button, input {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+  
+    input[type="range"] {
+      width: 100px;
+    }
+  
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+  
