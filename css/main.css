@@ -261,16 +261,15 @@ cursor: pointer;
   text-align: center;
   cursor: pointer;
 }
-  /* Add a hover effect */
+  /* hover effect */
         .navigation-button:hover {
 			color: #FFFFFF;
             background-color: #2b5145;
-            /* Add any other styles you want for the hover state */
+            
         }
         .contact-button:hover {
           color: #FFFFFF;
                 background-color: #2b5145;
-                /* Add any other styles you want for the hover state */
             }
 h1 {
   font-size: 45px;
@@ -414,7 +413,7 @@ p {
     margin-top: 20px;
   }
   .grid-con > * {
-    margin-top: 20px; /* Adjust the value according to your needs */
+    margin-top: 20px;
  }
 }
 
@@ -673,8 +672,8 @@ footer h3 {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 10px; /* Adjust padding as needed */
-  font-size: 24px; /* Adjust font size as needed */
+  padding: 10px;
+  font-size: 24px;
 }
  
 
@@ -751,7 +750,7 @@ section#gallerysection {
         opacity: 1;
     }
 }
-/* Add your styles here */
+
 .card {
     position: relative;
     overflow: hidden;
@@ -770,7 +769,6 @@ section#gallerysection {
     display: block;
 }
 
-/* Add your animation styles */
 .mygalleryimg:hover {
     animation: scaleUp 0.3s ease-in-out;
 }
@@ -845,7 +843,7 @@ section#gallerysection {
   }
   
   .show-menu .navigation {
-    display: flex; /* Ensure navigation items are visible when menu is toggled */
+    display: flex; 
 }
 
   .navigation .show-menu {
@@ -858,7 +856,7 @@ section#gallerysection {
  
 
 a {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   color: white; /* Set font color to white */
 }
  
@@ -924,7 +922,7 @@ a {
     background-color: black; /* Background color */
     color: white; /* Text color */
     border: none; /* Optionally remove the border */
-    padding: 10px; /* Adjust padding as needed */
+    padding: 10px; /* Padding */
   }
   .input-style {
     background-color: black;
