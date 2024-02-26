@@ -50,16 +50,16 @@ cursor: pointer;
   text-align: center;
   cursor: pointer;
 }
-  /* Add a hover effect */
+
         .navigation-button:hover {
 			color: #FFFFFF;
             background-color: #2b5145;
-            /* Add any other styles you want for the hover state */
+           
         }
         .contact-button:hover {
           color: #FFFFFF;
                 background-color: #2b5145;
-                /* Add any other styles you want for the hover state */
+              
             }
 h1 {
   font-size: 45px;
