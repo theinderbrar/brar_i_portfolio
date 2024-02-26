@@ -122,22 +122,21 @@ p {
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-/* start */
-/* Media query for smaller screens */
+
 @media only screen and (max-width: 600px) {
-    /* Adjust header navigation buttons */
+    /* Header navigation buttons */
     .navigation-button {
         display: block;
         text-align: center;
         margin-bottom: 10px;
     }
 
-    /* Adjust main header styles */
+    /* Main header styles */
     #main-header {
         padding: 10px;
     }
 
-    /* Adjust section padding */
+    /* Section padding */
     section {
         padding: 20px;
     }
@@ -146,12 +145,12 @@ p {
      {
         padding: 0px;
     }
-    /* Adjust footer content alignment */
+    /* Footer content alignment */
     .footer-title {
         text-align: center;
     }
 
-    /* Adjust footer links */
+    /* Footer links */
     footer h4, footer p {
         text-align: center;
     }
